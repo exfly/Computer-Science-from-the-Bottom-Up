@@ -1,4 +1,4 @@
-## 自下而上的计算机科学
+## 自下而上的计算机科学 (Computer Science from the Bottom Up)
 
 原著网站：[http://www.bottomupcs.com](http://www.bottomupcs.com)
 

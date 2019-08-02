@@ -38,3 +38,5 @@
     - [Fork and Exec](chapter5/section4.md)
     - [Context Switching](chapter5/section5.md)
     - [Scheduling](chapter5/section6.md)
+    - [shell](chapter5/section7.md)
+    - [Signals](chapter5/section8.md)

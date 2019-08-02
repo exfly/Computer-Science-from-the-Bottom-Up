@@ -78,20 +78,19 @@ init 进程的另一项工作是“收获”。当进程使用返回代码调用
 
 在这种情况下，僵尸子进程将被重新分配给 init 进程，该进程有一个特殊的处理程序来获取返回值。因此，该过程最终是免费的，并且可以从内核进程表中删除描述符。
 
-
 ```
 $ cat zombie.c
     #include <stdio.h>
     #include <stdlib.h>
-    
+
     int main(void)
     {
             pid_t pid;
-    
+
             printf("parent : %d\n", getpid());
-    
+
             pid = fork();
-    
+
             if (pid == 0) {
                     printf("child : %d\n", getpid());
                     sleep(2);
@@ -104,7 +103,7 @@ $ cat zombie.c
                     sleep(1);
             }
     }
-    
+
     ianw@lime:~$ ps ax | grep [z]ombie
     16168 pts/9    S      0:00 ./zombie
     16169 pts/9    Z      0:00 [zombie] <defunct>
@@ -112,4 +111,4 @@ $ cat zombie.c
 
 上面我们创建了一个僵尸进程。 父进程将永远休眠，而孩子将在几秒钟后退出。
 
-在代码下方，您可以看到运行程序的结果。 父进程（16168）处于睡眠状态S（正如我们所期望的）并且子进入Zombie的状态Z. ps输出还告诉我们该过程在过程描述中已不存在。
+在代码下方，您可以看到运行程序的结果。 父进程（16168）处于睡眠状态 S（正如我们所期望的）并且子进入 Zombie 的状态 Z. ps 输出还告诉我们该过程在过程描述中已不存在。
