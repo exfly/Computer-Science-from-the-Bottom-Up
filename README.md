@@ -8,3 +8,5 @@
 
 不定期更新，欢迎合作一起翻译这本有趣的书。
 
+## author
+[exfly](https://github.com/exfly)
