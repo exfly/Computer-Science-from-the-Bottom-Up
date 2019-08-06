@@ -65,3 +65,7 @@
   - [ABI](chapter8/section7.md)
   - [Starting a process](chapter8/section8.md)
 - [第九章 Dynamic Linking](chapter9/section1.md)
+  - [The Dynamic Linker](chapter9/section2.md)
+  - [Global Offset Tables](chapter9/section3.md)
+  - [Libraries](chapter9/section4.md)
+  - [Working with libraries and the linker](chapter9/section5.md)
