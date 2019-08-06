@@ -69,3 +69,6 @@
   - [Global Offset Tables](chapter9/section3.md)
   - [Libraries](chapter9/section4.md)
   - [Working with libraries and the linker](chapter9/section5.md)
+- [第十章 I/O Fundamentals](chapter10/section1.md)
+  - [File System Fundamentals](chapter10/section1.md)
+  - [Networking Fundamentals](chapter10/section2.md)
